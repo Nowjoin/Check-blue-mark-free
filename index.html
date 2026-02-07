@@ -2,155 +2,102 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Verified Subscription</title>
+<title>Meta Verified</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-*{box-sizing:border-box}
 body{
   margin:0;
   font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(180deg,#e9f2ff,#cfe2ff);
-  color:#1c1e21;
+  background:#e7f0ff;
 }
+
 .header{
-  padding:14px 16px;
-  background:#fff;
-  display:flex;
-  align-items:center;
-  gap:10px;
-  box-shadow:0 2px 8px rgba(0,0,0,.08);
-}
-.header .meta{
+  padding:15px;
   font-weight:bold;
   color:#1877f2;
-  font-size:18px;
 }
-.hero{
-  padding:22px 16px 8px;
-  text-align:center;
-}
-.hero h1{
-  margin:8px 0 6px;
-  font-size:22px;
-}
-.hero p{
-  margin:0;
-  color:#555;
-  font-size:14px;
-}
-.cards{
-  margin:18px auto;
-  max-width:420px;
-  position:relative;
-  height:260px;
-}
-.card{
-  position:absolute;
-  width:170px;
-  height:220px;
-  background:#fff;
-  border-radius:16px;
-  box-shadow:0 10px 30px rgba(0,0,0,.18);
-  overflow:hidden;
-}
-  .card img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-}
-.card.one{left:0; top:20px; transform:rotate(-6deg)}
-.card.two{left:120px; top:0; transform:rotate(2deg)}
-.card.three{right:0; top:28px; transform:rotate(6deg)}
 
-.tick{
+.container{
+  max-width:420px;
+  margin:auto;
+  padding:15px;
+}
+
+.cards{
+  position:relative;
+  height:200px;
+  margin:20px 0;
+}
+
+.card-img{
   position:absolute;
-  width:44px;
-  height:44px;
+  width:180px;
+  border-radius:16px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card1{ left:30px; top:20px; }
+.card2{ right:30px; top:40px; }
+
+.badge{
+  position:absolute;
+  bottom:10px;
+  right:10px;
   background:#1877f2;
+  color:#fff;
   border-radius:50%;
+  width:38px;
+  height:38px;
   display:flex;
   align-items:center;
   justify-content:center;
-  color:#fff;
   font-weight:bold;
-  box-shadow:0 6px 16px rgba(0,0,0,.25);
 }
-.tick.t1{left:6px; top:6px}
-.tick.t2{right:6px; bottom:6px}
-
-.features{
-  max-width:420px;
-  margin:8px auto 16px;
-  padding:0 16px;
-  font-size:14px;
-}
-.features li{margin:8px 0}
-
-.actions{
-  max-width:420px;
-  margin:0 auto 22px;
-  padding:0 16px;
-}
-.btn{
-  display:block;
+  .apply-btn{
   width:100%;
-  padding:14px;
   background:#1877f2;
   color:#fff;
-  text-decoration:none;
-  border-radius:12px;
-  font-size:16px;
-  font-weight:bold;
-  text-align:center;
-}
-.footer{
-  text-align:center;
-  font-size:12px;
-  color:#666;
-  padding-bottom:18px;
+  border:none;
+  padding:14px;
+  font-size:18px;
+  border-radius:10px;
 }
 </style>
 </head>
 
 <body>
 
-<div class="header">
-  <div class="meta">Meta</div>
-</div>
+<div class="header">Meta</div>
 
-<div class="hero">
-  <h1>Verified — enjoy subscription benefits</h1>
+<div class="container">
+  <h2>Verified – enjoy subscription benefits</h2>
   <p>Eligibility and renewal terms apply. Cancel anytime.</p>
-</div>
 
-<div class="cards">
-  <div class="card one">
-    <img src="img1.jpg" alt="">
-    <div class="tick t1">✔</div>
+  <div class="cards">
+    <div>
+      <img src="./card-demo.png" class="card-img card1">
+      <div class="badge">✔</div>
+    </div>
+
+    <div>
+      <img src="./card-demo.png" class="card-img card2">
+      <div class="badge">✔</div>
+    </div>
   </div>
-  <div class="card two">
-    <img src="img2.jpg" alt="">
-  </div>
-  <div class="card three">
-    <img src="img3.jpg" alt="">
-    <div class="tick t2">✔</div>
-  </div>
-</div>
 
-<ul class="features">
-  <li>✔ Verified badge for profile authenticity</li>
-  <li>✔ Enhanced account protection</li>
-  <li>✔ Dedicated support access</li>
-  <li>✔ Improved credibility</li>
-</ul>
+  <ul>
+    <li>Verified badge for profile authenticity</li>
+    <li>Enhanced account protection</li>
+    <li>Dedicated support access</li>
+    <li>Improved credibility</li>
+  </ul>
 
-<div class="actions">
-  <a href="next.html" class="btn">Apply</a>
-</div>
+  <button class="apply-btn">Apply</button>
 
-<div class="footer">
-  Informational demo page only
+  <p style="text-align:center;font-size:12px;margin-top:10px;">
+    Informational demo page only
+  </p>
 </div>
 
 </body>
